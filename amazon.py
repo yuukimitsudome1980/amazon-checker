@@ -137,6 +137,18 @@ st.sidebar.subheader(f'行数:{count}')
 if name != "":
     st.dataframe(df_page)
 
+def convert_df(df):
+    return df.to_csv().encode('utf-8')
+    
+csv = convert_df(df_page)
+
+st.download_button(
+    label = "ダウンロードCSV”,
+    data = csv,
+    file_name = 'amazon_scraping.csv',
+    mine = 'text/csv'
+)
+
 # エクセルで出力する為関数作成
 def df_to_xlsx(df):
     byte_xlsx = BytesIO()
@@ -159,3 +171,5 @@ st.download_button(
     data = df_xlsx,
     file_name= f'{name}.xlsx',
 )
+
+
