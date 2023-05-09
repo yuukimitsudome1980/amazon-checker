@@ -114,7 +114,7 @@ for page in range(snum,num):
 
 # 読み込みを確認する為URL,データ１行目を表示
     st.write(url)
-    st.write(df.head(1))
+#     st.write(df.head(1))
     df_list.append(df)
 
 # リストに入ったデータフレームを結合
