@@ -3,4 +3,4 @@ beautifulsoup4
 streamlit
 matplotlib
 openpyxl
-BytesIO
+io
