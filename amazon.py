@@ -120,8 +120,6 @@ for page in range(snum,num):
 # リストに入ったデータフレームを結合
 df_page = pd.concat(df_list)
 
-
-df_review = pd.DataFrame(rev_list)
 try:
     df_page['価格'] = df_page['価格'].str.replace('￥','')
     df_page['１個単価'] = df_page['１個単価'].str.replace('(','').str.replace(')','').str.replace('Amazonは日本の中小企業のブランドの商品を応援しています。食品から家電まで「日本の中小企業 応援ストア」を今すぐチェック。','').str.replace('こちらからもご購入いただけます','')
