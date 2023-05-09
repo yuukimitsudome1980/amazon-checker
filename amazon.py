@@ -2,19 +2,11 @@ import requests
 from bs4 import BeautifulSoup
 import streamlit as st
 import pandas as pd
-import numpy as np
-import sqlite3
 import datetime
 import time
 import glob
 import streamlit.components.v1 as components
 from datetime import timedelta
-import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
-import plotly.graph_objs as go
-import plotly.express as px
-import plotly.io as pio
-import seaborn as sns
 import openpyxl
 from io import BytesIO
 
