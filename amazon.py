@@ -143,7 +143,7 @@ def convert_df(df):
 csv = convert_df(df_page)
 
 st.download_button(
-    label = "ダウンロードCSV”,
+    label = "Download data csv",
     data = csv,
     file_name = 'amazon_scraping.csv',
     mine = 'text/csv'
