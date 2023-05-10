@@ -2,4 +2,4 @@ requests-oauthlib
 beautifulsoup4
 streamlit
 matplotlib
-openpyxl
+openpyxl==3.0.10
