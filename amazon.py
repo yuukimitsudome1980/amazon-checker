@@ -146,7 +146,7 @@ st.download_button(
     label = "Download data csv",
     data = csv,
     file_name = 'amazon_scraping.csv',
-    mine = 'text/csv'
+    mime = 'text/csv'
 )
 
 # エクセルで出力する為関数作成
