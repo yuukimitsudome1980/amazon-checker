@@ -113,6 +113,7 @@ for page in range(snum,num):
             st.write(e)
 
 # 読み込みを確認する為URL,データ１行目を表示
+    st.write(f"データ確認 {page}ページ目")
     st.write(url)
     st.write(df.head(1))
     df_list.append(df)
@@ -135,6 +136,7 @@ time.sleep(1)
 count = len(df_page)-2
 st.sidebar.subheader(f'行数:{count}')
 if name != "":
+    st.subheader("検索データ")
     st.dataframe(df_page)
 
 def convert_df(df):
